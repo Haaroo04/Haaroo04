@@ -1,36 +1,45 @@
-<html>
-
-<head>
-  <script defer src="script.js"></script>
-  <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-
-    <h1 style="text-align:center;">Ola hat eine grose bratwurst</h1>
-    <h2 id="melding"></h2>
-    <h2 id="vinnar"></h2>
-
-    <main> <!-- Tabellen til tre på rad -->
-
-        <div id = "nullNull" ; onclick = nullNullClick()>-</div>
-        <div id = "nullEn"onclick = nullEnClick()>-</div>
-        <div id = "nullTo"onclick = nullToClick()>-</div>
-
-        <div id = "enNull"; onclick = enNullClick()>-</div>
-        <div id = "enEn"; onclick = enEnClick()>-</div>
-        <div id = "enTo"; onclick = enToClick()>-</div>
-
-        <div id = "toNull"; onclick = toNullClick()>-</div>
-        <div id = "toEn"; onclick = toEnClick()>-</div>
-        <div id = "toTo"; onclick = toToClick()>-</div>
-
-    </main>
-
+main{ /* Lager Tabellen */
+    display:grid;
+    grid-template-columns: 100px 100px 10px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-auto-rows: minmax(60px, auto);
+    margin-top: 100px;
+    text-align:center;
+    align-items:center;
+    border-style:dotted;
+    position:fixed;
+    right: 50%;
     
-</body>
+}
+body{
+    background-color: rgb(132, 132, 219);
+}
 
+div{
+    border-style: inset;
+    border-width:3px;
+    border-color: black;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    background-color:rgb(62, 98, 197);
+    
+    
+}
+#nullNull,#nullEn,#nullTo {
+    float: left;
+}
+#enNull,#enEn,#enTo {
+    float: left;
+}
+#toNull,#toEn,#toTo {
+    float: left;
+}
 
+h2{
+    text-align:center;
+}
 
 
 
